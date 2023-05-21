@@ -1,0 +1,9 @@
+body{
+    margin: 0px;                                  /* sacamos todo los espacio en blanco, no hay margen con respecto a los bordes de las ventanas*/
+}
+div.navegacion{
+    background-image: url(torta.jpg);             /* Imagen superior de las paginas*/
+    height: 400px;
+    background-size: cover;                       /*tamaño del fondo del div*/
+    background-position: center;                  /*Posicionamiento del fondo del div*/
+}
