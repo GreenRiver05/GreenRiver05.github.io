@@ -31,7 +31,7 @@ body {
 #contenedorMenu {
     width: 100%;
     height: 40px;
-    margin-top: 30px;
+    margin-top: 20px;
     position: absolute;
     /*creamos el contenedor de nuestro menu, lo ubicamos en una ubicacion absoluta para que se superponga con la imagen de inicio*/
 }
@@ -47,7 +47,26 @@ body {
     color: white;
     align-items: center;
     /*Alinea los elementos flexibles en el centro del contenedor VERTICAL*/
-    border: 1px solid white;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.8);
     /*Transparencia usando RGBA: no se aplica opacidad a los elementos secundarios*/
+}
+
+ul li {
+    list-style-type: none;
+    /*Elimina las balas. Una barra de navegación no necesita marcadores de lista*/
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.8);
+    /*Transparencia usando RGBA: no se aplica opacidad a los elementos secundarios*/
+
+}
+
+.botones {
+    height: 35px;
+    width: 100%;
+    padding: 2px;
+    /*relleno*/
+    display: flex;
+    /*Muestra un elemento como un contenedor flexible a nivel de bloque*/
+    align-items: center;
+    /*Alinea los elementos flexibles en el centro del contenedor VERTICAL*/
 }
