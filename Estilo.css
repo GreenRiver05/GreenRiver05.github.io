@@ -1,9 +1,53 @@
-body{
-    margin: 0px;                                  /* sacamos todo los espacio en blanco, no hay margen con respecto a los bordes de las ventanas*/
+body {
+    margin: 0px;
+    /* sacamos todo los espacio en blanco, no hay margen con respecto a los bordes de las ventanas*/
+    background-color: rgb(42, 40, 40);
 }
-div.navegacion{
-    background-image: url(torta.jpg);             /* Imagen superior de las paginas*/
-    height: 400px;
-    background-size: cover;                       /*tamaño del fondo del div*/
-    background-position: center;                  /*Posicionamiento del fondo del div*/
+
+#presentacion {
+    padding-top: 0px;
+    background-image: url(torta.jpg);
+    /* Imagen superior de las paginas*/
+    height: 600px;
+    background-size: cover;
+    /*tamaño del fondo del div*/
+    background-position: center;
+    /*Posicionamiento del fondo del div*/
+    background-color: rgba(0, 0, 0, 0.3);
+    /*Transparencia usando RGBA: no se aplica opacidad a los elementos secundarios*/
+    background-blend-mode: darken;
+    /*define el modo de fusión de cada capa de fondo (color y/o imagen).*/
+    display: flex;
+    /*Muestra un elemento como un contenedor flexible a nivel de bloque*/
+    justify-content: center;
+    /*Alinea los elementos flexibles en el centro del contenedor HORIZONTAL*/
+    align-items: center;
+    /*Alinea los elementos flexibles en el centro del contenedor VERTICAL*/
+    color: white;
+    flex-direction: column;
+    /*apila los elementos flexibles verticalmente (de arriba a abajo):*/
+}
+
+#contenedorMenu {
+    width: 100%;
+    height: 40px;
+    margin-top: 30px;
+    position: absolute;
+    /*creamos el contenedor de nuestro menu, lo ubicamos en una ubicacion absoluta para que se superponga con la imagen de inicio*/
+}
+
+#menu {
+    position: fixed;
+    /*le colocamos posicion fija para que se mantenga en el mismo lugar siempre que se haga scroll*/
+    display: flex;
+    /*Muestra un elemento como un contenedor flexible a nivel de bloque*/
+    width: 100%;
+    height: 40px;
+    background-color: black;
+    color: white;
+    align-items: center;
+    /*Alinea los elementos flexibles en el centro del contenedor VERTICAL*/
+    border: 1px solid white;
+    background-color: rgba(0, 0, 0, 0.7);
+    /*Transparencia usando RGBA: no se aplica opacidad a los elementos secundarios*/
 }
