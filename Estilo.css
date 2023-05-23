@@ -55,9 +55,7 @@ ul li {
     list-style-type: none;
     /*Elimina las balas. Una barra de navegación no necesita marcadores de lista*/
     display: inline-block;
-    background-color: rgba(0, 0, 0, 0.8);
-    /*Transparencia usando RGBA: no se aplica opacidad a los elementos secundarios*/
-
+   
 }
 
 .botones {
@@ -69,4 +67,13 @@ ul li {
     /*Muestra un elemento como un contenedor flexible a nivel de bloque*/
     align-items: center;
     /*Alinea los elementos flexibles en el centro del contenedor VERTICAL*/
+    background-color: black;
+    /*Transparencia usando RGBA: no se aplica opacidad a los elementos secundarios*/
+    color: white;
+    border: none;
+}
+
+.botones:hover{
+    background-color: darkred;
+    color: white;
 }
