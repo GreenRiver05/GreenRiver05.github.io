@@ -4,11 +4,18 @@ body {
     background-color: rgb(42, 40, 40);
 }
 
+.imagenPresentacion {
+    background-image: url(FrolaPacman.jpg);
+    /* Imagen superior de las paginas*/
+    height: 1000px;
+}
+
+.textoPresentacion {
+    height: 100px;
+}
+
 #presentacion {
     padding-top: 0px;
-    background-image: url(torta.jpg);
-    /* Imagen superior de las paginas*/
-    height: 600px;
     background-size: cover;
     /*tamaño del fondo del div*/
     background-position: center;
@@ -23,10 +30,11 @@ body {
     /*Alinea los elementos flexibles en el centro del contenedor HORIZONTAL*/
     align-items: center;
     /*Alinea los elementos flexibles en el centro del contenedor VERTICAL*/
-    color: white;
     flex-direction: column;
     /*apila los elementos flexibles verticalmente (de arriba a abajo):*/
+    color: white;
 }
+
 
 #contenedorMenu {
     width: 100%;
@@ -55,25 +63,39 @@ ul li {
     list-style-type: none;
     /*Elimina las balas. Una barra de navegación no necesita marcadores de lista*/
     display: inline-block;
-   
+
 }
 
 .botones {
     height: 35px;
-    width: 100%;
-    padding: 2px;
+    padding: 20px;
     /*relleno*/
     display: flex;
     /*Muestra un elemento como un contenedor flexible a nivel de bloque*/
     align-items: center;
     /*Alinea los elementos flexibles en el centro del contenedor VERTICAL*/
-    background-color: black;
-    /*Transparencia usando RGBA: no se aplica opacidad a los elementos secundarios*/
+    background-color: rgba(0, 0, 0, 0.2);
     color: white;
     border: none;
+    font-size: 18px;
 }
 
-.botones:hover{
-    background-color: darkred;
+a{
+    text-decoration: none;
+    /*La text-decoration propiedad se usa principalmente para eliminar los subrayados de los enlaces:*/
     color: white;
+}
+
+.botones:active {
+    /*BOTONES ANIMADOS Agregue un efecto "presionado" al hacer clic:*/
+    background-color: rgba(200, 6, 6, 0.379);
+    transform: translateY(2px);
+}
+
+.botones:hover {
+    /*selector para cambiar el estilo de un botón cuando pasas el mouse sobre él.*/
+    background-color: rgba(200, 6, 6, 0.379);
+    color: white;
+    box-shadow: 0 0px 10px 5px rgba(116, 6, 6, 0.564)
+        /*box-shadow propiedad para agregar sombras a un botón:*/
 }
