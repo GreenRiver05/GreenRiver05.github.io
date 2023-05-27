@@ -8,11 +8,12 @@ body {
     background-image: url(FrolaPacman.jpg);
     /* Imagen superior de las paginas*/
     height: 1000px;
+    background-color: rgba(0, 0, 0, 0.3);
+    /*Transparencia usando RGBA: no se aplica opacidad a los elementos secundarios*/
+    background-blend-mode: darken;
+    /*define el modo de fusión de cada capa de fondo (color y/o imagen).*/
 }
 
-.textoPresentacion {
-    height: 100px;
-}
 
 #presentacion {
     padding-top: 0px;
@@ -20,10 +21,6 @@ body {
     /*tamaño del fondo del div*/
     background-position: center;
     /*Posicionamiento del fondo del div*/
-    background-color: rgba(0, 0, 0, 0.3);
-    /*Transparencia usando RGBA: no se aplica opacidad a los elementos secundarios*/
-    background-blend-mode: darken;
-    /*define el modo de fusión de cada capa de fondo (color y/o imagen).*/
     display: flex;
     /*Muestra un elemento como un contenedor flexible a nivel de bloque*/
     justify-content: center;
@@ -35,6 +32,16 @@ body {
     color: white;
 }
 
+.textoPresentacion {
+    background-color: rgba(0, 0, 0, 0.3);
+    /*Transparencia usando RGBA: no se aplica opacidad a los elementos secundarios*/
+    background-blend-mode: darken;
+    /*define el modo de fusión de cada capa de fondo (color y/o imagen).*/
+}
+
+.textoPresentacion:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+}
 
 #contenedorMenu {
     width: 100%;
@@ -53,34 +60,33 @@ body {
     height: 40px;
     background-color: black;
     color: white;
+    justify-content: center;
+    /*Alinea los elementos flexibles en el centro del contenedor HORIZONTAL*/
     align-items: center;
     /*Alinea los elementos flexibles en el centro del contenedor VERTICAL*/
     background-color: rgba(0, 0, 0, 0.8);
     /*Transparencia usando RGBA: no se aplica opacidad a los elementos secundarios*/
 }
 
-ul li {
-    list-style-type: none;
-    /*Elimina las balas. Una barra de navegación no necesita marcadores de lista*/
-    display: inline-block;
-
-}
-
 .botones {
     height: 35px;
     padding: 20px;
     /*relleno*/
+    width: 300px;
     display: flex;
     /*Muestra un elemento como un contenedor flexible a nivel de bloque*/
+    justify-content: center;
+    /*Alinea los elementos flexibles en el centro del contenedor HORIZONTAL*/
     align-items: center;
     /*Alinea los elementos flexibles en el centro del contenedor VERTICAL*/
     background-color: rgba(0, 0, 0, 0.2);
     color: white;
     border: none;
-    font-size: 18px;
+    /*quitamos el borde*/
+    font-size: 25px;
 }
 
-a{
+a {
     text-decoration: none;
     /*La text-decoration propiedad se usa principalmente para eliminar los subrayados de los enlaces:*/
     color: white;
@@ -97,5 +103,44 @@ a{
     background-color: rgba(200, 6, 6, 0.379);
     color: white;
     box-shadow: 0 0px 10px 5px rgba(116, 6, 6, 0.564)
-        /*box-shadow propiedad para agregar sombras a un botón:*/
+    /*box-shadow propiedad para agregar sombras a un botón:*/
+}
+
+.dropdown {
+    display: inline-block;
+    /*Muestra un elemento como un contenedor de bloques de nivel en línea. se le puede aplicar valores de alto y ancho*/
+    position: relative;
+    /*El elemento se coloca en relación con su posición normal*/
+}
+
+.dropdown-content {
+    display: none;
+    /*El elemento se elimina por completo*/
+    position: absolute;
+    /*El elemento se coloca en relación con su primer elemento ancestro posicionado*/
+    width: 100%;
+    /*mismo ancho que el boton*/
+    background-color: rgba(0, 0, 0, 0.9);
+    
+
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    /*Muestra un elemento como un elemento de bloque*/
+}
+
+.dropdown-content a {
+    display: block;
+    /*Muestra un elemento como un elemento de bloque*/
+    color: white;
+    padding: 15px;
+    font-size: 20px;
+    text-decoration: none;
+    /*La text-decoration propiedad se usa principalmente para eliminar los subrayados de los enlaces:*/
+}
+
+.dropdown-content a:hover {
+    color: white;
+    background-color: rgba(200, 6, 6, 0.379)
 }
