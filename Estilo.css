@@ -121,6 +121,7 @@ a {
     width: 100%;
     /*mismo ancho que el boton*/
     background-color: rgba(0, 0, 0, 0.9);
+    overflow: auto;
     
 
 }
