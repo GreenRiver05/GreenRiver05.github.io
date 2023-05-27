@@ -1,10 +1,18 @@
 body {
     margin: 0px;
     /* sacamos todo los espacio en blanco, no hay margen con respecto a los bordes de las ventanas*/
-    background-image: url(barista.jpg);
-    height: 1000px;
-    width: 100%;
-    
+    background-image: url(monteFugi.jpg);
+    /*para centrarla en la pantalla y debajo de la imagen principal*/
+    background-repeat: no-repeat;
+    /*no se repite la imagen*/
+    background-position: center;
+    background-size: 100% 100%;
+    /*Valor predeterminado. La imagen de fondo se muestra en su tamaño original*/
+    background-attachment: fixed;
+    /*La background-attachmentpropiedad establece si una imagen de fondo se desplaza con el resto de la página o si es fija.*/
+
+
+
 }
 
 #carrouselPrincipal {
@@ -19,7 +27,8 @@ body {
 }
 
 
-.presentacion {
+.presentacion,
+.textoPresentacion {
     padding-top: 0%;
     background-size: cover;
     /*tamaño del fondo del div*/
@@ -39,8 +48,8 @@ body {
 .textoPresentacion {
     background-color: rgba(0, 0, 0, 0.3);
     /*Transparencia usando RGBA: no se aplica opacidad a los elementos secundarios*/
-    background-blend-mode: darken;
-    /*define el modo de fusión de cada capa de fondo (color y/o imagen).*/
+
+
 }
 
 .textoPresentacion:hover {
@@ -58,7 +67,7 @@ body {
 }
 
 .menu {
-   
+    position: fixed;
     /*le colocamos posicion fija para que se mantenga en el mismo lugar siempre que se haga scroll*/
     display: flex;
     /*Muestra un elemento como un contenedor flexible a nivel de bloque*/
@@ -174,14 +183,16 @@ a {
 }
 
 .Emprendimientos {
-    margin-top: 100px;
-    margin-left: 50px;
-    margin-right: 50px;
-    background-color: black;
-    height: 240px;
+    width: 70%;
+    height: 350px;
+    margin-left: 15%;
+    margin-top: 5%;
+    box-shadow: 0 0px 8px 3px rgba(249, 249, 249, 0.806);
+    /*box-shadow propiedad para agregar sombras a un botón:*/
+
 }
 
 .Emprendimientos img {
-    width: 240px;
+    width: 350px;
     height: 100%;
 }
