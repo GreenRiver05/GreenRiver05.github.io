@@ -1,13 +1,17 @@
 body {
     margin: 0px;
     /* sacamos todo los espacio en blanco, no hay margen con respecto a los bordes de las ventanas*/
-    background-color: rgb(42, 40, 40);
+    background-image: url(barista.jpg);
+    height: 1000px;
+    width: 100%;
+    
 }
 
-.imagenPresentacion {
+#carrouselPrincipal {
     background-image: url(FrolaPacman.jpg);
     /* Imagen superior de las paginas*/
     height: 1000px;
+    width: 100%;
     background-color: rgba(0, 0, 0, 0.3);
     /*Transparencia usando RGBA: no se aplica opacidad a los elementos secundarios*/
     background-blend-mode: darken;
@@ -15,8 +19,8 @@ body {
 }
 
 
-#presentacion {
-    padding-top: 0px;
+.presentacion {
+    padding-top: 0%;
     background-size: cover;
     /*tamaño del fondo del div*/
     background-position: center;
@@ -43,16 +47,18 @@ body {
     background-color: rgba(0, 0, 0, 0.6);
 }
 
-#contenedorMenu {
+
+.contenedorMenu {
     width: 100%;
     height: 40px;
     margin-top: 20px;
     position: absolute;
     /*creamos el contenedor de nuestro menu, lo ubicamos en una ubicacion absoluta para que se superponga con la imagen de inicio*/
+    float: none;
 }
 
-#menu {
-    position: fixed;
+.menu {
+   
     /*le colocamos posicion fija para que se mantenga en el mismo lugar siempre que se haga scroll*/
     display: flex;
     /*Muestra un elemento como un contenedor flexible a nivel de bloque*/
@@ -92,6 +98,30 @@ a {
     color: white;
 }
 
+.Bakery {
+    font-family: cursive;
+    color: burlywood;
+}
+
+.Indah {
+    font-family: 'Arial Narrow Bold', sans-serif;
+    color: rgb(86, 140, 142);
+}
+
+.Indah span {
+    font-size: 15px;
+}
+
+.Colibrí {
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(148, 77, 214);
+}
+
+.Arrebol {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(1, 133, 32);
+}
+
 .botones:active {
     /*BOTONES ANIMADOS Agregue un efecto "presionado" al hacer clic:*/
     background-color: rgba(200, 6, 6, 0.379);
@@ -103,7 +133,7 @@ a {
     background-color: rgba(200, 6, 6, 0.379);
     color: white;
     box-shadow: 0 0px 10px 5px rgba(116, 6, 6, 0.564)
-    /*box-shadow propiedad para agregar sombras a un botón:*/
+        /*box-shadow propiedad para agregar sombras a un botón:*/
 }
 
 .dropdown {
@@ -122,8 +152,7 @@ a {
     /*mismo ancho que el boton*/
     background-color: rgba(0, 0, 0, 0.9);
     overflow: auto;
-    
-
+    font-size: 25px;
 }
 
 .dropdown:hover .dropdown-content {
@@ -134,9 +163,7 @@ a {
 .dropdown-content a {
     display: block;
     /*Muestra un elemento como un elemento de bloque*/
-    color: white;
     padding: 15px;
-    font-size: 20px;
     text-decoration: none;
     /*La text-decoration propiedad se usa principalmente para eliminar los subrayados de los enlaces:*/
 }
@@ -144,4 +171,17 @@ a {
 .dropdown-content a:hover {
     color: white;
     background-color: rgba(200, 6, 6, 0.379)
+}
+
+.Emprendimientos {
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: black;
+    height: 240px;
+}
+
+.Emprendimientos img {
+    width: 240px;
+    height: 100%;
 }

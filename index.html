@@ -10,16 +10,16 @@
 </head>
 
 <body>
-
-    <div id="contenedorMenu"> <!-- Contiene mi menu / posicion absoluta -->
-        <div id="menu"> <!-- Menu que contiene mis botones / posicion Fija  -->
+<!------------------------------------------------------------- MENU -------------------------------------------------------------------------------->
+    <div class="contenedorMenu"> <!-- Contiene mi menu / posicion absoluta -->
+        <div class="menu"> <!-- Menu que contiene mis botones / posicion Fija  -->
             <div class="dropdown">
-                <button class="botones" type="button">INICIO</button> <!--Boton con menu desplegable-->
+                <button class="botones" type="button"><a href="#carrouselPrincipal">INICIO</a></button> <!--Boton con menu desplegable-->
                 <div class="dropdown-content">
-                    <a rel="noopener" target="_blank" href="#">Presentacion Bakery Sabri</a>
-                    <a rel="noopener" target="_blank" href="#">Presentacion Indha Deco.Home</a>
-                    <a rel="noopener" target="_blank" href="#">Presentacion Pinto un Colibrí</a>
-                    <a rel="noopener" target="_blank" href="#">Presentacion Arrebol Sinergico</a>
+                    <a class="Bakery" href="#presentacionBakery">Bakery Sabrina Mariel</a>
+                    <a class="Indah" href="#presentacionIndah">INDAH <span>DECO.HOME</span></a>
+                    <a class="Colibrí" href="#presentacionColibri">Pinto un Colibrí</a>
+                    <a class="Arrebol" href="#presentacionArrebol">Arrebol Sinergico</a>
                 </div>
             </div>
             <button class="botones" type="button"><a href="Emprendimientos.html">EMPRENDIMIENTOS</a></button>
@@ -27,14 +27,42 @@
         </div>
     </div>
 
-
-    <div id="presentacion" class="imagenPresentacion"> <!--Presentacion Imagen-->
-        <div id="presentacion" class="textoPresentacion"><!--Presentacion Texto-->
+<!------------------------------------------------------------- CARROUSEL PRESENTACION  ---------------------------------------------------------------->
+    <div id="carrouselPrincipal" class="presentacion"> <!--Presentacion Imagen-->
+        <div class="presentacion" class="textoPresentacion"><!--Presentacion Texto-->
             <h1>EMPRENDIMIENTOS FAMILIARES</h1>
             <h2>Amor y Pasion con lo que hacemos</h2>
         </div>
     </div>
 
+<!------------------------------------------------------------- EMPRENDIMIENTOS ------------------------------------------------------------------------->
+    <div id="presentacionBakery" class="Emprendimientos">
+        <img src="BakerySabri.png" alt="BakerySabri" >
+        <div>
+            
+        </div>
+    </div>
+
+    <div id="presentacionIndah" class="Emprendimientos">
+        <img src="Indah.png" alt="BakerySabri">
+        <div>
+            
+        </div>
+    </div>
+
+    <div id="presentacionColibri" class="Emprendimientos">
+        <img src="PintoUnColibrijpg.jpg" alt="BakerySabri">
+        <div>
+            
+        </div>
+    </div>
+
+    <div id="presentacionArrebol" class="Emprendimientos">
+        <img src="Condora.jpg" alt="BakerySabri">
+        <div>
+            
+        </div>
+    </div>
 </body>
 
 </html>
