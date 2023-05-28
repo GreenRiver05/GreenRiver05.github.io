@@ -218,7 +218,7 @@ a {
     /*Alinea los elementos flexibles en el centro del contenedor VERTICAL*/
     flex-direction: column;
     /*apila los elementos flexibles verticalmente (de arriba a abajo):*/
-    padding-left: 15px;
+   
 }
 
 .Emprendimientos img {
@@ -236,4 +236,10 @@ a {
 }
 p{
     font-size: 1.5em;
+   
+    padding-left: 10px;
+}
+li{
+font-size: 1.3em;
+ list-style-type: none;
 }
