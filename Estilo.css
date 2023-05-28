@@ -10,9 +10,6 @@ body {
     /*Valor predeterminado. La imagen de fondo se muestra en su tamaño original*/
     background-attachment: fixed;
     /*La background-attachmentpropiedad establece si una imagen de fondo se desplaza con el resto de la página o si es fija.*/
-
-
-
 }
 
 #carrouselPrincipal {
@@ -30,6 +27,7 @@ body {
 .presentacion,
 .textoPresentacion {
     padding-top: 0%;
+    margin-bottom: 150px;
     background-size: cover;
     /*tamaño del fondo del div*/
     background-position: center;
@@ -48,8 +46,6 @@ body {
 .textoPresentacion {
     background-color: rgba(0, 0, 0, 0.3);
     /*Transparencia usando RGBA: no se aplica opacidad a los elementos secundarios*/
-
-
 }
 
 .textoPresentacion:hover {
@@ -160,7 +156,6 @@ a {
     width: 100%;
     /*mismo ancho que el boton*/
     background-color: rgba(0, 0, 0, 0.9);
-    overflow: auto;
     font-size: 25px;
 }
 
@@ -182,17 +177,63 @@ a {
     background-color: rgba(200, 6, 6, 0.379)
 }
 
-.Emprendimientos {
-    width: 70%;
+.contenedorEmprendimientos {
+    margin-bottom: 40px;
+    width: 75%;
     height: 350px;
-    margin-left: 15%;
-    margin-top: 5%;
-    box-shadow: 0 0px 8px 3px rgba(249, 249, 249, 0.806);
+    margin-left: 13%;
+    color: white;
+    box-shadow: 0 0px 10px 2px rgba(251, 251, 251, 0.625);
     /*box-shadow propiedad para agregar sombras a un botón:*/
+    background-color: rgba(0, 0, 0, 0.8);
+    /*Transparencia usando RGBA: no se aplica opacidad a los elementos secundarios*/
+    background-blend-mode: darken;
+    /*define el modo de fusión de cada capa de fondo (color y/o imagen).*/
+}
 
+
+.Emprendimientos {
+    /*IMAGENES*/
+    float: left;
+    /*Especifica que un elemento deba flotar hacia la izquierda*/
+    width: 24.5%;
+    padding: 0px;
+    height: 350px;
+}
+
+.EmprendimientosMedio {
+    /*CONTENIDO*/
+    float: left;
+    /*Especifica que un elemento deba flotar hacia la izquierda*/
+    width: 51%;
+    padding: 0px;
+    height: 350px;
+}
+.EmprendimientosMedio div{
+    display: flex;
+    /*Muestra un elemento como un contenedor flexible a nivel de bloque*/
+    justify-content: center;
+    /*Alinea los elementos flexibles en el centro del contenedor HORIZONTAL*/
+    align-items: center;
+    /*Alinea los elementos flexibles en el centro del contenedor VERTICAL*/
+    flex-direction: column;
+    /*apila los elementos flexibles verticalmente (de arriba a abajo):*/
+    padding-left: 15px;
 }
 
 .Emprendimientos img {
+    height: 350px;
     width: 350px;
-    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+    /*nos permite incluir el relleno y el borde en el ancho (y alto) total de la caja, asegurándonos de que el relleno quede dentro de la caja y que no se rompa*/
+}
+
+.mayor{
+    font-size: 2.5em;
+}
+p{
+    font-size: 1.5em;
 }
