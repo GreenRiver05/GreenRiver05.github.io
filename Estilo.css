@@ -1,7 +1,7 @@
 body {
     margin: 0px;
     /* sacamos todo los espacio en blanco, no hay margen con respecto a los bordes de las ventanas*/
-    background-image: url(monteFugi.jpg);
+    background-image: url(rsz_montefugi.jpg);
     /*para centrarla en la pantalla y debajo de la imagen principal*/
     background-repeat: no-repeat;
     /*no se repite la imagen*/
@@ -13,7 +13,7 @@ body {
 }
 
 #carrouselPrincipal {
-    background-image: url(FrolaPacman.jpg);
+    background-image: url(rsz_frolapacman.jpg);
     /* Imagen superior de las paginas*/
     height: 1000px;
     width: 100%;
@@ -137,8 +137,9 @@ a {
     /*selector para cambiar el estilo de un botón cuando pasas el mouse sobre él.*/
     background-color: rgba(200, 6, 6, 0.379);
     color: white;
-    box-shadow: 0 0px 10px 5px rgba(116, 6, 6, 0.564)
+    box-shadow: 0 0px 10px 5px rgba(116, 6, 6, 0.564);
         /*box-shadow propiedad para agregar sombras a un botón:*/
+    cursor: pointer;
 }
 
 .dropdown {
@@ -210,6 +211,7 @@ a {
     height: 350px;
 }
 .EmprendimientosMedio div{
+    
     display: flex;
     /*Muestra un elemento como un contenedor flexible a nivel de bloque*/
     justify-content: center;
@@ -234,12 +236,24 @@ a {
 .mayor{
     font-size: 2.5em;
 }
-p{
+p,li{
     font-size: 1.5em;
-   
+    list-style-type: none;
     padding-left: 10px;
 }
-li{
-font-size: 1.3em;
- list-style-type: none;
+
+#presentacionBakery{
+    position: absolute;
+    margin-top: 800px;
+}
+
+.final{
+    margin-top: 200px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+}
+
+span{
+    font-weight: bold;
 }
