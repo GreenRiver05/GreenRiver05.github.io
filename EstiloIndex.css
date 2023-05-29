@@ -95,12 +95,14 @@ body {
     border: none;
     /*quitamos el borde*/
     font-size: 25px;
+    transition-duration: 0.4s;
 }
 
 a {
     text-decoration: none;
     /*La text-decoration propiedad se usa principalmente para eliminar los subrayados de los enlaces:*/
     color: white;
+    display: block;
 }
 
 .Bakery {
@@ -127,18 +129,18 @@ a {
     color: rgb(1, 133, 32);
 }
 
-.botones:active {
+.botones:active, .Bakery:active, .Arrebol:active, .Colibrí:active, .Indah:active  {
     /*BOTONES ANIMADOS Agregue un efecto "presionado" al hacer clic:*/
-    background-color: rgba(200, 6, 6, 0.379);
+    background-color: rgba(255, 5, 5, 0.491);
     transform: translateY(2px);
 }
 
-.botones:hover {
+.botones:hover, .Bakery:hover, .Arrebol:hover, .Colibrí:hover, .Indah:hover {
     /*selector para cambiar el estilo de un botón cuando pasas el mouse sobre él.*/
-    background-color: rgba(200, 6, 6, 0.379);
+    background-color: rgba(255, 5, 5, 0.491);
     color: white;
-    box-shadow: 0 0px 10px 5px rgba(116, 6, 6, 0.564);
-        /*box-shadow propiedad para agregar sombras a un botón:*/
+    box-shadow: 0 0px 10px 5px rgba(255, 5, 5, 0.491);
+    /*box-shadow propiedad para agregar sombras a un botón:*/
     cursor: pointer;
 }
 
@@ -175,7 +177,8 @@ a {
 
 .dropdown-content a:hover {
     color: white;
-    background-color: rgba(200, 6, 6, 0.379)
+    background-color: rgba(255, 5, 5, 0.491);
+
 }
 
 .contenedorEmprendimientos {

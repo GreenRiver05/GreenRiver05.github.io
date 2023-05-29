@@ -1,0 +1,78 @@
+body {
+    margin: 0px;
+    /* sacamos todo los espacio en blanco, no hay margen con respecto a los bordes de las ventanas*/
+    background-image: url(aurora.jpg);
+    /*para centrarla en la pantalla y debajo de la imagen principal*/
+    background-repeat: no-repeat;
+    /*no se repite la imagen*/
+    background-position: center;
+    background-size: 100% 100%;
+    /*Valor predeterminado. La imagen de fondo se muestra en su tamaño original*/
+    background-attachment: fixed;
+    /*La background-attachmentpropiedad establece si una imagen de fondo se desplaza con el resto de la página o si es fija.*/
+}
+
+.contenedorMenu {
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+    position: absolute;
+    /*creamos el contenedor de nuestro menu, lo ubicamos en una ubicacion absoluta para que se superponga con la imagen de inicio*/
+    float: none;
+}
+
+.menu {
+    position: fixed;
+    /*le colocamos posicion fija para que se mantenga en el mismo lugar siempre que se haga scroll*/
+    display: flex;
+    /*Muestra un elemento como un contenedor flexible a nivel de bloque*/
+    width: 100%;
+    height: 40px;
+    background-color: black;
+    color: white;
+    justify-content: center;
+    /*Alinea los elementos flexibles en el centro del contenedor HORIZONTAL*/
+    align-items: center;
+    /*Alinea los elementos flexibles en el centro del contenedor VERTICAL*/
+    background-color: rgba(0, 0, 0, 0.8);
+    /*Transparencia usando RGBA: no se aplica opacidad a los elementos secundarios*/
+}
+
+.botones {
+    height: 40px;
+    width: 300px;
+    display: flex;
+    /*Muestra un elemento como un contenedor flexible a nivel de bloque*/
+    justify-content: center;
+    /*Alinea los elementos flexibles en el centro del contenedor HORIZONTAL*/
+    align-items: center;
+    /*Alinea los elementos flexibles en el centro del contenedor VERTICAL*/
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    border: none;
+    /*quitamos el borde*/
+    font-size: 25px;
+    transition-duration: 0.4s;
+}
+
+a {
+    text-decoration: none;
+    /*La text-decoration propiedad se usa principalmente para eliminar los subrayados de los enlaces:*/
+    color: white;
+}
+
+.botones:active {
+    /*BOTONES ANIMADOS Agregue un efecto "presionado" al hacer clic:*/
+    background-color: rgba(0, 250, 254, 0.491);
+    transform: translateY(2px);
+}
+
+.botones:hover {
+    /*selector para cambiar el estilo de un botón cuando pasas el mouse sobre él.*/
+    background-color: rgba(0, 250, 254, 0.491);
+    color: white;
+    box-shadow: 0 0px 10px 5px rgba(0, 250, 254, 0.491);
+        /*box-shadow propiedad para agregar sombras a un botón:*/
+    cursor: pointer;
+}
+
