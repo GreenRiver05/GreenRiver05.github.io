@@ -16,7 +16,6 @@ body {
     width: 100%;
     height: 40px;
     margin-top: 20px;
-    position: absolute;
     /*creamos el contenedor de nuestro menu, lo ubicamos en una ubicacion absoluta para que se superponga con la imagen de inicio*/
     float: none;
 }
@@ -72,7 +71,42 @@ a {
     background-color: rgba(0, 250, 254, 0.491);
     color: white;
     box-shadow: 0 0px 10px 5px rgba(0, 250, 254, 0.491);
-        /*box-shadow propiedad para agregar sombras a un botón:*/
+    /*box-shadow propiedad para agregar sombras a un botón:*/
     cursor: pointer;
 }
 
+h1{
+    text-align: center;
+    color: white;
+    font-size: 4em;
+}
+.contenedorFormulario {
+    margin-top: 100px;
+    width: 50%;
+    height: 800px;
+    margin-left: 25%;
+    box-shadow: 0 0px 100px 5px rgba(7, 234, 234, 0.67);
+    /*box-shadow propiedad para agregar sombras a un botón:*/
+    background-color: rgba(6, 64, 64, 0.897);
+}
+
+
+
+
+
+
+
+
+
+
+
+.final{
+    margin-top: 100px;
+    background-color: rgba(247, 245, 245, 0.688);
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+}
+
+span{
+    font-weight: bold;
+}
