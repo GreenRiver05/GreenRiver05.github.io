@@ -153,7 +153,7 @@ textarea {
     /*apila los elementos flexibles verticalmente (de arriba a abajo):*/
 }
 
-div p{
+.oculto p{
     margin-top: 0;
     margin-bottom: 5px;
     width: 80%;
@@ -161,6 +161,7 @@ div p{
     color: red;
     font-size: 1.2em;
     visibility:hidden;
+    /*El elemento estará oculto, pero aún afectará el diseño:*/
 }
 .submit{
     margin-top: 45px;

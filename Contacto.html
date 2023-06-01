@@ -30,25 +30,29 @@
                 <div class="columnas ">
                     <label for="" class="label">Mensaje:</label>
                     <textarea name="message" id="mensaje"></textarea>
-                    <div><p>error</p></div>
+                    <div class="oculto" id="error"></div>
                 </div>
                 <div class="columnas">
 
                     <label for="" class="label">Nombre:</label>
                     <input type="text" id="nombre">
-                    <div><p>error</p></div>
+                    <div class="oculto" id="nombre"></div>
                     <label for="" class="label">Telefono:</label>
                     <input type="text" id="telefono">
-                    <div><p>error</p></div>
+                    <div class="oculto telefono"></div>
                     <label for="" class="label">Correo:</label>
                     <input type="text" id="correo">
-                    <div><p>error</p></div>
+                    <div class="oculto correo"></div>
                     <input type="submit" class="submit">
                 </div>
 
             </div>
-
-
+<!--El <input "readonly" atributo de entrada
+especifica que un campo de entrada es de solo lectura.-->
+<!--maxlength="4 El maxlengthatributo de entrada especifica el número máximo de caracteres permitidos en un campo de entrada.
+Nota: Cuando se establece a maxlength, el campo de entrada no aceptará más que el número de caracteres especificado. Sin embargo, este atributo no proporciona ningún comentario. Entonces, 
+si desea alertar al usuario, debe escribir código JavaScript.-->
+<!--El autofocusatributo de entrada especifica que un campo de entrada debe enfocarse automáticamente cuando se carga la página.-->
         </div>
     </form>
 
