@@ -103,15 +103,14 @@ h1 {
 input {
     width: 90%;
     margin-top: 10px;
-    margin-bottom: 30px;
     border-style: inset;
     height: 50px;
     border-radius: 15px;
+    font-size: 2em;
+    background-color: rgba(211, 248, 248, 0.553);
 }
 
 label {
-    
-    border: 2px solid yellow;
     font-size: 2em;
 }
 
@@ -120,27 +119,52 @@ label {
     /*Especifica que un elemento deba flotar hacia la izquierda*/
     width: 50%;
     height: 500px;
-    border: 2px solid white;
     text-align: center;
-  
     color: white;
 }
 
-.mensaje {
-    height: 400px;
-    border-radius: 15px 70px 15px 70px;
+textarea {
+  border-radius: 20px;
+  /*bordes con un estilo redondo*/
+  background-color: rgba(211, 248, 248, 0.553);
+  font-size: 2.1em;
+  border-style: inset;
+  margin-left: 10px;
+  margin-top: 10px;
+  height: 400px;
+  width: 100%;
 }
 
 .contendorColumnas {
-    border: 2px solid rgb(225, 11, 11);
     height: 500px;
-
-
-
 }
 
+.contenedorMensaje{
+    margin-top: 100px;
+    width: 50%;
+    height: 300px;
+    margin-left: 25%;
+    box-shadow: 0 0px 100px 5px rgba(7, 234, 234, 0.67);
+    /*box-shadow propiedad para agregar sombras a un botón:*/
+    background-color: rgba(6, 64, 64, 0.897);
+    display: flex;
+    /*Muestra un elemento como un contenedor flexible a nivel de bloque*/
+    flex-direction: column;
+    /*apila los elementos flexibles verticalmente (de arriba a abajo):*/
+}
 
-
+div p{
+    margin-top: 0;
+    margin-bottom: 5px;
+    width: 80%;
+    margin-left: 10%;
+    color: red;
+    font-size: 1.2em;
+    visibility:hidden;
+}
+.submit{
+    margin-top: 45px;
+}
 
 
 

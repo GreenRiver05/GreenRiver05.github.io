@@ -22,23 +22,27 @@
 
 
 
-    <form class="formulario">
+    <form class="formulario" onsubmit="return validarFormulario()">
 
         <div class="contenedorFormulario">
             <h1>Consulta o Sugerencia</h1>
             <div class="contendorColumnas">
                 <div class="columnas ">
-                    <label for="" class="label">Mensaje</label>
-                    <input type="text" class="input mensaje">
+                    <label for="" class="label">Mensaje:</label>
+                    <textarea name="message" id="mensaje"></textarea>
+                    <div><p>error</p></div>
                 </div>
                 <div class="columnas">
 
-                    <label for="" class="label">Nombre</label>
-                    <input type="text" class="input">
-                    <label for="" class="label">Telefono</label>
-                    <input type="text" class="input">
-                    <label for="" class="label">Correo</label>
-                    <input type="text" class="input">
+                    <label for="" class="label">Nombre:</label>
+                    <input type="text" id="nombre">
+                    <div><p>error</p></div>
+                    <label for="" class="label">Telefono:</label>
+                    <input type="text" id="telefono">
+                    <div><p>error</p></div>
+                    <label for="" class="label">Correo:</label>
+                    <input type="text" id="correo">
+                    <div><p>error</p></div>
                     <input type="submit" class="submit">
                 </div>
 
@@ -48,6 +52,15 @@
         </div>
     </form>
 
+    <div class="contenedorMensaje">
+
+
+    </div>
+  <!--
+    <a href="#">
+        <i><img src=""/></i>
+    </a>
+  -->  
 
 
     </div>

@@ -129,13 +129,13 @@ a {
     color: rgb(1, 133, 32);
 }
 
-.botones:active, .Bakery:active, .Arrebol:active, .Colibrí:active, .Indah:active  {
+.botones:active, a .Bakery:active, a .Arrebol:active,  a .Colibrí:active, a .Indah:active  {
     /*BOTONES ANIMADOS Agregue un efecto "presionado" al hacer clic:*/
     background-color: rgba(255, 5, 5, 0.491);
     transform: translateY(2px);
 }
 
-.botones:hover, .Bakery:hover, .Arrebol:hover, .Colibrí:hover, .Indah:hover {
+.botones:hover, a .Bakery:hover, a .Arrebol:hover, a .Colibrí:hover, a .Indah:hover {
     /*selector para cambiar el estilo de un botón cuando pasas el mouse sobre él.*/
     background-color: rgba(255, 5, 5, 0.491);
     color: white;
