@@ -89,7 +89,7 @@ h1 {
 .contenedorFormulario {
     margin-top: 30px;
     width: 50%;
-    height: 660px;
+    height: 700px;
     margin-left: 25%;
     box-shadow: 0 0px 100px 5px rgba(7, 234, 234, 0.67);
     /*box-shadow propiedad para agregar sombras a un botón:*/
@@ -102,7 +102,6 @@ h1 {
 
 input {
     width: 90%;
-    margin-top: 10px;
     border-style: inset;
     height: 50px;
     border-radius: 15px;
@@ -121,25 +120,26 @@ label {
     height: 500px;
     text-align: center;
     color: white;
+   
 }
 
 textarea {
-  border-radius: 20px;
-  /*bordes con un estilo redondo*/
-  background-color: rgba(211, 248, 248, 0.553);
-  font-size: 2.1em;
-  border-style: inset;
-  margin-left: 10px;
-  margin-top: 10px;
-  height: 400px;
-  width: 100%;
+    border-radius: 20px;
+    /*bordes con un estilo redondo*/
+    background-color: rgba(211, 248, 248, 0.553);
+    font-size: 2.1em;
+    border-style: inset;
+    margin-left: 10px;
+    margin-top: 10px;
+    height: 400px;
+    width: 100%;
 }
 
 .contendorColumnas {
     height: 500px;
 }
 
-.contenedorMensaje{
+.contenedorMensaje {
     margin-top: 100px;
     width: 50%;
     height: 300px;
@@ -153,18 +153,26 @@ textarea {
     /*apila los elementos flexibles verticalmente (de arriba a abajo):*/
 }
 
-.oculto p{
-    margin-top: 0;
+.oculto {
+    margin-top: 0px;
     margin-bottom: 5px;
     width: 80%;
     margin-left: 10%;
     color: red;
     font-size: 1.2em;
-    visibility:hidden;
     /*El elemento estará oculto, pero aún afectará el diseño:*/
+    visibility:hidden;
+
 }
-.submit{
-    margin-top: 45px;
+
+.submit {
+    margin-top: 25px;
+}
+
+p {
+    margin-top: 0px;
+    height: 23px;
+    border: 1px solid red;
 }
 
 
