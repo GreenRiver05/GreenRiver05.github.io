@@ -120,29 +120,41 @@ label {
     height: 500px;
     text-align: center;
     color: white;
-   
+
 }
 
 textarea {
     border-radius: 20px;
     /*bordes con un estilo redondo*/
     background-color: rgba(211, 248, 248, 0.553);
-    font-size: 2.1em;
+    font-size: 1.7em;
     border-style: inset;
     margin-left: 10px;
     margin-top: 10px;
     height: 400px;
-    width: 100%;
+    width: 90%;
 }
 
 .contendorColumnas {
     height: 500px;
 }
 
+.contenedorMensaje textarea {
+    border-radius: 10px;
+    /*bordes con un estilo redondo*/
+    background-color: rgba(211, 248, 248, 0.553);
+    font-size: 1.7em;
+    border-style: inset;
+    margin-left: 10px;
+    margin-top: 20px;
+    height: 200px;
+    width: 80%;
+}
+
 .contenedorMensaje {
     margin-top: 100px;
     width: 50%;
-    height: 300px;
+    height: 500px;
     margin-left: 25%;
     box-shadow: 0 0px 100px 5px rgba(7, 234, 234, 0.67);
     /*box-shadow propiedad para agregar sombras a un botón:*/
@@ -151,6 +163,59 @@ textarea {
     /*Muestra un elemento como un contenedor flexible a nivel de bloque*/
     flex-direction: column;
     /*apila los elementos flexibles verticalmente (de arriba a abajo):*/
+    align-items: center;
+    /*Alinea los elementos flexibles en el centro del contenedor VERTICAL*/
+}
+
+#contactoNombre, #contactoTelefono, #contactoCorreo{
+    font-size: 1.5em;
+    background-color: rgba(211, 248, 248, 0.348);
+    height: 1.5em;
+  padding:5px;
+}
+
+#contactoTelefono{
+    width: 25%;
+}
+.contactoCorreo h2{
+    padding-left: 10px;
+    width: 50%;
+    text-transform: capitalize;
+    /*Se usa para poner en mayúscula la primera letra de cada palabra:*/
+}
+
+.contactoNombre h2 {
+    width: 90%;
+    text-transform: capitalize;
+    /*Se usa para poner en mayúscula la primera letra de cada palabra:*/
+}
+
+.contactoNombre .primaria, .contactoCorreo .primaria, .primaria{
+    width: 22%;
+    font-size: 2em;
+    text-decoration: underline;
+    /*text-decoration-line propiedad se utiliza para agregar una línea de decoración al texto.*/
+    color: white;
+    
+}
+
+.contactoNombre,.contactoCorreo {
+    align-items: center;
+    /*Alinea los elementos flexibles en el centro del contenedor VERTICAL*/
+    display: flex;
+    /*Muestra un elemento como un contenedor flexible a nivel de bloque*/
+    width: 80%;
+}
+
+
+.contactoMensaje{
+    border-radius: 10px;
+    /*bordes con un estilo redondo*/
+    background-color: rgba(211, 248, 248, 0.553);
+    border-style: inset;
+    height: 200px;
+    width: 80%;
+    font-size: 2em;
 }
 
 .oculto {
@@ -158,21 +223,26 @@ textarea {
     margin-bottom: 5px;
     width: 80%;
     margin-left: 10%;
-    color: red;
-    font-size: 1.2em;
+    color: rgba(232, 7, 7, 0.821);
+    font-size: 1.5em;
     /*El elemento estará oculto, pero aún afectará el diseño:*/
-    visibility:hidden;
+    visibility: hidden;
 
 }
 
 .submit {
     margin-top: 25px;
+    color: white;
+}
+
+.submit:hover {
+    background-color: rgba(16, 124, 124, 0.897);
+    cursor: pointer;
 }
 
 p {
-    margin-top: 0px;
+    margin-top: 2px;
     height: 23px;
-    border: 1px solid red;
 }
 
 

@@ -22,7 +22,8 @@
 
 
 
-    <form class="formulario" onsubmit="return validarFormulario()">
+    <form class="formulario" onsubmit="return validarFormulario()" autocomplete="off" id="formulario"> 
+        <!--El autocompleteatributo especifica si un formulario debe tener activado o desactivado el autocompletado.-->
 
         <div class="contenedorFormulario">
             <h1>Consulta o Sugerencia</h1>
@@ -59,18 +60,27 @@
                 </div>
 
             </div>
-            <!--El <input "readonly" atributo de entrada
-especifica que un campo de entrada es de solo lectura.-->
-            <!--maxlength="4 El maxlengthatributo de entrada especifica el número máximo de caracteres permitidos en un campo de entrada.
-Nota: Cuando se establece a maxlength, el campo de entrada no aceptará más que el número de caracteres especificado. Sin embargo, este atributo no proporciona ningún comentario. Entonces, 
-si desea alertar al usuario, debe escribir código JavaScript.-->
-            <!--El autofocusatributo de entrada especifica que un campo de entrada debe enfocarse automáticamente cuando se carga la página.-->
+
         </div>
     </form>
 
     <script src="script.js"></script>
 
     <div class="contenedorMensaje">
+
+        <div class="contactoNombre">
+            <h2 class="primaria">Contacto:</h2><h2 id="contactoNombre"></h2>
+        </div>
+
+        <div class="contactoCorreo">
+            <h2 class="primaria">Telefono: </h2><h2 id="contactoTelefono"></h2>
+            <h2 class="primaria">Correo: </h2><h2 id="contactoCorreo"></h2>
+        </div>
+
+        <h2 class="primaria"> MENSAJE: </h2>
+        <div class="contactoMensaje" id="contactoMensaje">
+
+        </div>
 
 
     </div>
