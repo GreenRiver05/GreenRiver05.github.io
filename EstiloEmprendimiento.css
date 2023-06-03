@@ -53,6 +53,7 @@ body {
     /*quitamos el borde*/
     font-size: 25px;
     transition-duration: 0.4s;
+    /*La transition-duration propiedad especifica cuántos segundos (s) o milisegundos (ms) tarda en completarse un efecto de transición.*/
 }
 
 .contenedorCarrusel {
@@ -113,4 +114,15 @@ a {
     box-shadow: 0 0px 10px 5px rgba(218, 149, 0, 0.491);
     /*box-shadow propiedad para agregar sombras a un botón:*/
     cursor: pointer;
+}
+
+.final{
+    margin-top: 200px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+}
+
+span{
+    font-weight: bold;
 }

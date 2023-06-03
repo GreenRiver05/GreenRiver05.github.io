@@ -12,36 +12,40 @@ body {
     /*La background-attachmentpropiedad establece si una imagen de fondo se desplaza con el resto de la página o si es fija.*/
 }
 
-.izquierda{
+.izquierda img, .derecha img{
+    width: 70px;
+    height: 70px;
+}
+.izquierda a, .derecha a{
     width: 200px;
     height: 600px;
-    position: absolute;
-    margin-top: 200px;
     background-color: rgba(0, 0, 0, 0.3);
     /*Transparencia usando RGBA: no se aplica opacidad a los elementos secundarios*/
     background-blend-mode: darken;
     /*define el modo de fusión de cada capa de fondo (color y/o imagen).*/
+    width: 100px;
+    height: 600px;
+    position: absolute;
+    margin-top: 200px;
+    display: flex;
+    /*Muestra un elemento como un contenedor flexible a nivel de bloque*/
+    justify-content: center;
+    /*Alinea los elementos flexibles en el centro del contenedor HORIZONTAL*/
+    align-items: center;
+    /*Alinea los elementos flexibles en el centro del contenedor VERTICAL*/
 }
-
 .derecha{
-    background-color: rgba(0, 0, 0, 0.3);
-    /*Transparencia usando RGBA: no se aplica opacidad a los elementos secundarios*/
-    background-blend-mode: darken;
-    /*define el modo de fusión de cada capa de fondo (color y/o imagen).*/
-    width: 200px;
-    height: 600px;
-    position: absolute;
-    margin-left: 89.5%;
-    margin-top: 200px;
+ margin-left: 94.6%;
+ 
 }
-.derecha:hover,.izquierda:hover{
+.derecha a:hover,.izquierda a:hover{
     background-color: rgba(0, 0, 0, 0.6);
     /*Transparencia usando RGBA: no se aplica opacidad a los elementos secundarios*/
     background-blend-mode: darken;
     /*define el modo de fusión de cada capa de fondo (color y/o imagen).*/
+    cursor: pointer;
+    /*cambiamos el estilo del cursor al pasar por los botones*/
 }
-
-
 
 #carrouselPrincipal {
     background-image: url(frolapacman.jpg) ;
@@ -53,7 +57,6 @@ body {
     background-blend-mode: darken;
     /*define el modo de fusión de cada capa de fondo (color y/o imagen).*/
 }
-
 
 .presentacion,
 .textoPresentacion {
@@ -173,6 +176,7 @@ a {
     box-shadow: 0 0px 10px 5px rgba(255, 5, 5, 0.491);
     /*box-shadow propiedad para agregar sombras a un botón:*/
     cursor: pointer;
+    /*cambiamos el estilo del cursor al pasar por los botones*/
 }
 
 .dropdown {
