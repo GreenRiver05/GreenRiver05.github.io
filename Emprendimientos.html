@@ -25,7 +25,7 @@
     <div class="contenedorCarrusel">
 
         <div class="Izquierda">
-            <a href="#" onclick="Izquierda()" role="button"><i><img src="izquierda.png" /></i></a>
+            <a onclick="Izquierda()" role="button"><i><img src="izquierda.png" /></i></a>
         </div>
 
         <div class="miCarrusel">
@@ -33,51 +33,39 @@
         </div>
 
         <div class="Derecha">
-           <a href="#" onclick="Derecha()" role="button"><i><img src="derecha.png" /></i></a>
-           
+            <a onclick="Derecha()" role="button"><i><img src="derecha.png" /></i></a>
+
         </div>
 
     </div>
 
     <script>
-
         var imagen = [];
-
-        imagen[0] = "/aurora.jpg"
-        imagen[1] = "/madera.jpg"
-        imagen[2] = "/ojo.jpg"
-        imagen[3] = "/Sahumador.jpg"
-        var i = 0;
+        imagen[0] = "aurora.jpg";
+        imagen[1] = "madera.jpg";
+        imagen[2] = "Ojo.png";
+        imagen[3] = "Sahumador.jpg";
+        var i = 3;
         var pelotita = document.getElementById("carru");
-
-
         function Izquierda() {
 
-            if (i > 0) {
+            if (i != 0) {
                 i--;
                 pelotita.src = imagen[i];
-
             } else {
-                i = imagen.length - 1;
+                i = 3;
                 pelotita.src = imagen[i];
             }
-            return false;
-
         }
-
         function Derecha() {
-            if (i < imagen.length - 1) {
+            if (i != 3) {
                 i++;
                 pelotita.src = imagen[i];
             } else {
-                pelotita.src = imagen[0];
-                i = 1;
+                i = 0;
+                pelotita.src = imagen[i];
             }
-            return false;
         }
-
     </script>
-
 </body>
-
 </html>

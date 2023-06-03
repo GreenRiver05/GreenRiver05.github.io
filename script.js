@@ -134,9 +134,6 @@ function validarFormulario() {
         document.getElementById("formulario").reset();
         //El método reset() restablece los valores de todos los elementos de un formulario
     }
-
-
     return false;
-
 }
 

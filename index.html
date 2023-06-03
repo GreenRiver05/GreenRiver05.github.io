@@ -31,16 +31,50 @@
 
     <!------------------------------------------------------------- CARROUSEL PRESENTACION  ---------------------------------------------------------------->
     <div class="izquierda">
+        <a onclick="Izquierda()" role="button"><i><img src="izquierda.png" alt="flecha izquierda"></i></a>
     </div>
     <div class="derecha">
+        <a onclick="Derecha()" role="button"><i><img src="derecha.png" alt="flecha derecha"></i></a>
     </div>
-
+   
     <div id="carrouselPrincipal" class="presentacion"> <!--Presentacion Imagen-->
         <div class="textoPresentacion"><!--Presentacion Texto-->
             <h1 class="mayor">EMPRENDIMIENTOS FAMILIARES</h1>
             <h1>Amor y Pasión con lo que hacemos</h2>
         </div>
     </div>
+    <script>
+        var imagen = [];
+        imagen[0] = "./Originales/tabla1.jpg"
+        imagen[1] = "./Originales/ojo1.jpg"
+        imagen[2] = "./Originales/Sahumador.jpg"
+        imagen[3] = "frolapacman.jpg"
+        var i = 3;
+       
+        function Izquierda(){
+            if (i != 0) {
+                i--;
+                document.getElementById("carrouselPrincipal").style.backgroundImage ="url("+imagen[i]+")"
+                //pelotita.style.backgroundImage = "url("+imagen[i]+")"
+
+            } else {
+                i = 3;
+                document.getElementById("carrouselPrincipal").style.backgroundImage ="url("+imagen[i]+")"
+            }
+            return false;
+        }
+        function Derecha() {
+            if (i != 3) {
+                i++;
+                document.getElementById("carrouselPrincipal").style.backgroundImage ="url("+imagen[i]+")"
+            } else {
+                i = 0;
+                document.getElementById("carrouselPrincipal").style.backgroundImage ="url("+imagen[i]+")"
+            }
+            return false;
+        }
+    </script>
+
 
     <!------------------------------------------------------------- EMPRENDIMIENTOS ------------------------------------------------------------------------->
 
@@ -79,13 +113,13 @@
             </div>
         </div>
         <div class="Emprendimientos">
-            <img src="Sahumador.jpg" alt="Sahumador">
+            <img src="botanico.jpg" alt="Sahumador">
         </div>
     </div>
 
     <div id="presentacionArrebol" class="contenedorEmprendimientos">
         <div class="Emprendimientos">
-            <img src="PintoUnColibrijpg.jpg" alt="PintoUnColibrí">
+            <img src="PintoUnColibri.jpg" alt="PintoUnColibrí">
         </div>
         <div class="EmprendimientosMedio">
             <div>
@@ -97,7 +131,7 @@
             </div>
         </div>
         <div class="Emprendimientos">
-            <img src="Cuadro Colibri.jpg" alt="CuadroColibrí">
+            <img src="CuadroColibri.jpg" alt="CuadroColibrí">
         </div>
     </div>
 
@@ -114,7 +148,7 @@
             </div>
         </div>
         <div class="Emprendimientos">
-            <img src="Ojo.jpg" alt="CuadroOjo">
+            <img src="cafeyremolacha.png" alt="CuadroOjo">
         </div>
     </div>
     <div class="final">
