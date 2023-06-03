@@ -97,7 +97,7 @@ function validarFormulario() {
         while (removerContacto.hasChildNodes()) {
             removerContacto.removeChild(removerContacto.firstChild);
         }
-        
+
         let removerTelefono = document.getElementById("contactoTelefono");
         while (removerTelefono.hasChildNodes()) {
             removerTelefono.removeChild(removerTelefono.firstChild);
@@ -139,3 +139,4 @@ function validarFormulario() {
     return false;
 
 }
+

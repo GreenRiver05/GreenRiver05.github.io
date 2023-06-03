@@ -11,13 +11,72 @@
     <!------------------------------------------------------------- MENU -------------------------------------------------------------------------------->
     <div class="contenedorMenu"> <!-- Contiene mi menu / posicion absoluta -->
         <div class="menu"> <!-- Menu que contiene mis botones / posicion Fija  -->
-            <a href="index.html" class="botones" >INICIO</a>
-            <a href="Emprendimientos.html" class="botones" >EMPRENDIMIENTOS</a>
-            <a href="Contacto.html" class="botones" >CONTACTO</a>
+            <a href="index.html" class="botones">INICIO</a>
+            <a href="Emprendimientos.html" class="botones">EMPRENDIMIENTOS</a>
+            <a href="Contacto.html" class="botones">CONTACTO</a>
         </div>
     </div>
 
-    
+
+
+
+    <!------------------------------------------------------------- miCarrusel -------------------------------------------------------------------------------->
+
+    <div class="contenedorCarrusel">
+
+        <div class="Izquierda">
+            <a href="#" onclick="Izquierda()" role="button"><i><img src="izquierda.png" /></i></a>
+        </div>
+
+        <div class="miCarrusel">
+            <img src="Sahumador.jpg" id="carru" name="carru">
+        </div>
+
+        <div class="Derecha">
+           <a href="#" onclick="Derecha()" role="button"><i><img src="derecha.png" /></i></a>
+           
+        </div>
+
+    </div>
+
+    <script>
+
+        var imagen = [];
+
+        imagen[0] = "/aurora.jpg"
+        imagen[1] = "/madera.jpg"
+        imagen[2] = "/ojo.jpg"
+        imagen[3] = "/Sahumador.jpg"
+        var i = 0;
+        var pelotita = document.getElementById("carru");
+
+
+        function Izquierda() {
+
+            if (i > 0) {
+                i--;
+                pelotita.src = imagen[i];
+
+            } else {
+                i = imagen.length - 1;
+                pelotita.src = imagen[i];
+            }
+            return false;
+
+        }
+
+        function Derecha() {
+            if (i < imagen.length - 1) {
+                i++;
+                pelotita.src = imagen[i];
+            } else {
+                pelotita.src = imagen[0];
+                i = 1;
+            }
+            return false;
+        }
+
+    </script>
 
 </body>
 

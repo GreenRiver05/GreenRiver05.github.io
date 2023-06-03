@@ -55,6 +55,45 @@ body {
     transition-duration: 0.4s;
 }
 
+.contenedorCarrusel {
+    display: flex;
+    justify-content: center;
+    /*Alinea los elementos flexibles en el centro del contenedor HORIZONTAL*/
+    align-items: center;
+    /*Alinea los elementos flexibles en el centro del contenedor VERTICAL*/
+    padding: 200px;
+}
+
+.Izquierda {
+    height: 100px;
+    width: 10%;
+    
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.Derecha {
+    width: 10%;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.2);
+
+}
+
+.Derecha:hover,
+.Izquierda:hover {
+
+    background-color: rgba(0, 0, 0, 0.);
+}
+
+i img {
+    height: 100%;
+    width: 100%;
+}
+
+img {
+    height: 800px;
+    width: 800px;
+}
+
 a {
     text-decoration: none;
     /*La text-decoration propiedad se usa principalmente para eliminar los subrayados de los enlaces:*/
@@ -72,7 +111,6 @@ a {
     background-color: rgba(218, 149, 0, 0.491);
     color: white;
     box-shadow: 0 0px 10px 5px rgba(218, 149, 0, 0.491);
-        /*box-shadow propiedad para agregar sombras a un botón:*/
+    /*box-shadow propiedad para agregar sombras a un botón:*/
     cursor: pointer;
 }
-
