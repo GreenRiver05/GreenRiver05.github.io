@@ -68,7 +68,6 @@ body {
 .Izquierda {
     height: 100px;
     width: 10%;
-    
     background-color: rgba(0, 0, 0, 0.2);
 }
 
@@ -81,7 +80,6 @@ body {
 
 .Derecha:hover,
 .Izquierda:hover {
-
     background-color: rgba(0, 0, 0, 0.);
 }
 
@@ -125,4 +123,11 @@ a {
 
 span{
     font-weight: bold;
+}
+
+.contenedorPrincipal{
+    width: 90%;
+    padding-top: 200px;
+    border: 1px solid white;
+    margin-left: 5%;
 }
