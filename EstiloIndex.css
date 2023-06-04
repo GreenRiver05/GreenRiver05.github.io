@@ -1,7 +1,7 @@
 body {
     margin: 0px;
     /* sacamos todo los espacio en blanco, no hay margen con respecto a los bordes de las ventanas*/
-    background-image: url(rsz_montefugi.jpg);
+    background-image: url(./ImagenesPaginaPrincipal/rsz_montefugi.jpg);
     /*para centrarla en la pantalla y debajo de la imagen principal*/
     background-repeat: no-repeat;
     /*no se repite la imagen*/
@@ -48,7 +48,7 @@ body {
 }
 
 #carrouselPrincipal {
-    background-image: url(frolapacman.jpg) ;
+    background-image: url(./ImagenesPaginaPrincipal/frolapacman.jpg) ;
     /* Imagen superior de las paginas*/
     height: 1000px;
     width: 100%;
@@ -151,6 +151,9 @@ a {
 
 .Indah span {
     font-size: 15px;
+}
+.EmprendimientosMedio span{
+    font-size: 25px;
 }
 
 .Colibrí {
@@ -287,8 +290,13 @@ p,li{
 
 .final{
     margin-top: 200px;
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
+    background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo);
+    /*Los degradados CSS le permiten mostrar transiciones suaves entre dos o más colores específicos.*/
+    background-color: rgba(0, 0, 0, 0.3);
+    /*Transparencia usando RGBA: no se aplica opacidad a los elementos secundarios*/
+    background-blend-mode: darken;
+    /*define el modo de fusión de cada capa de fondo (color y/o imagen).*/
+    color: white;
     font-size: 22px;
 }
 

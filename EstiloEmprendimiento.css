@@ -89,8 +89,8 @@ i img {
 }
 
 img {
-    height: 800px;
-    width: 800px;
+    height: 100%;
+    width: 100%;
 }
 
 a {
@@ -114,20 +114,109 @@ a {
     cursor: pointer;
 }
 
-.final{
+.contenedorPrincipal {
+    width: 90%;
+    padding-top: 200px;
+     margin-left: 5%;
+}
+
+.contenedorEmprendimientos {
+      display: flex;
+    /*Muestra un elemento como un contenedor flexible a nivel de bloque*/
+    justify-content: center;
+    /*Alinea los elementos flexibles en el centro del contenedor HORIZONTAL*/ 
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+* {
+    box-sizing: border-box;
+    /*nos permite incluir el relleno y el borde en el ancho (y alto) total de la caja, asegurándonos de que el relleno quede dentro de la caja y que no se rompa*/
+}
+
+.presentacion {
+    width: 50%;
+}
+
+.contenedorFotos img{
+    width: 100%;
+    height: 100%;
+}
+ .horizontal:hover{
+    transform: translate(-10%, -20%);
+    /*Las transformaciones CSS le permiten mover, rotar, escalar y sesgar elementos.*/
+    transition: width 0s, height 0s;
+    /*Las transiciones de CSS le permiten cambiar los valores de propiedad sin problemas, durante un período determinado.*/
+    width: 600px;
+    height: 600px;
+} 
+.vertical:hover{
+    transform: translate(-10%, -20%);
+    transition: width 0s, height 0s;
+    width: 400px;
+    height: 600px;
+}
+
+
+.contenedorFotos div{
+    float: left;
+    margin: 7px;
+    height: 270px;
+    width: 270px;
+}
+
+h1{
+    margin: 0px;
+    text-align: center;
+    font-size: 4em;
+}
+
+.Bakery {
+    font-family: cursive;
+    color: burlywood;
+}
+
+.Indah {
+    font-family: 'Arial Narrow Bold', sans-serif;
+    color: rgb(86, 140, 142);
+}
+
+.Indah span {
+    font-size: 40px;
+}
+
+.Colibrí {
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(148, 77, 214);
+}
+
+.Arrebol {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(1, 133, 32);
+}
+.fotoPresentacion {
+    width: 50%;
+}
+
+hr {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    height: 10px;
+    border-color:rgba(218, 149, 0, 0.491);
+    background-color: rgba(218, 149, 0, 0.491);
+}
+
+.final {
     margin-top: 200px;
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
+    background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo);
+    /*Los degradados CSS le permiten mostrar transiciones suaves entre dos o más colores específicos.*/
+    background-color: rgba(0, 0, 0, 0.3);
+    /*Transparencia usando RGBA: no se aplica opacidad a los elementos secundarios*/
+    background-blend-mode: darken;
+    /*define el modo de fusión de cada capa de fondo (color y/o imagen).*/
+    color: white;
     font-size: 22px;
 }
 
-span{
+span {
     font-weight: bold;
-}
-
-.contenedorPrincipal{
-    width: 90%;
-    padding-top: 200px;
-    border: 1px solid white;
-    margin-left: 5%;
 }

@@ -245,18 +245,15 @@ p {
     height: 23px;
 }
 
-
-
-
-
-
-
-
-
 .final {
-    margin-top: 100px;
-    background-color: rgba(247, 245, 245, 0.688);
-    color: rgb(0, 0, 0);
+    margin-top: 200px;
+    background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo);
+    /*Los degradados CSS le permiten mostrar transiciones suaves entre dos o más colores específicos.*/
+    background-color: rgba(0, 0, 0, 0.3);
+    /*Transparencia usando RGBA: no se aplica opacidad a los elementos secundarios*/
+    background-blend-mode: darken;
+    /*define el modo de fusión de cada capa de fondo (color y/o imagen).*/
+    color: white;
     font-size: 22px;
 }
 
