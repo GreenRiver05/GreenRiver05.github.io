@@ -1,7 +1,7 @@
 body {
     margin: 0px;
     /* sacamos todo los espacio en blanco, no hay margen con respecto a los bordes de las ventanas*/
-    background-image: url(./ImagenesPaginaPrincipal/rsz_montefugi.jpg);
+      background-image: url(./ImagenesPaginaPrincipal/rsz_montefugi.jpg);
     /*para centrarla en la pantalla y debajo de la imagen principal*/
     background-repeat: no-repeat;
     /*no se repite la imagen*/

@@ -2,11 +2,11 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF  -8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trabajo Integrador</title>
-    <link rel="stylesheet" type="text/css" href="EstiloIndex.css">
+    <link rel="stylesheet" href="text/css" href="EstiloIndex.css">
 </head>
 
 
@@ -37,7 +37,7 @@
         <!--El onclick evento ocurre cuando el usuario hace clic en un elemento HTML .-->
     </div>
     <div class="derecha">
-        <a onclick="Derecha()"><img src="./ImagenesPaginaPrincipal/derecha.png" alt="flecha derecha"></a>
+        <a onclick="Derecha()"><img src="./ImagenesPaginaPrincipal/derecha.png" alt="flecha derecha" id="botoncito"></a>
     </div>
    
     <div id="carrouselPrincipal" class="presentacion"> <!--Presentacion Imagen-->
@@ -46,7 +46,11 @@
             <h1>Amor y Pasión con lo que hacemos</h2>
         </div>
     </div>
+
+    
     <script>
+       
+
         var imagen = [];
         imagen[0] = "./ImagenesPaginaPrincipal/Tabla1.jpg"
         imagen[1] = "./ImagenesPaginaPrincipal/Ojo1.png"
@@ -59,6 +63,7 @@
                 i--;
                 document.getElementById("carrouselPrincipal").style.backgroundImage ="url("+imagen[i]+")"
                 //pelotita.style.backgroundImage = "url("+imagen[i]+")"
+
 
             } else {
                 i = 3;
